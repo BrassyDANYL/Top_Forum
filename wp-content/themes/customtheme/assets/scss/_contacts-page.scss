@@ -1,0 +1,220 @@
+.container {
+    .contacts-block {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        @media (max-width: 710px) {
+            margin-top: 100px;
+        }
+
+        .map {
+            width: 750px;
+            height: 440px;
+            margin-bottom: 40px;
+            @media (max-width: 770px) {
+                width: 300px;
+                margin-left: 0px;
+            }
+            iframe {
+                @media (max-width: 770px) {
+                    width: 300px;
+                    margin-left: 0px;
+                }
+            }
+        }
+        .contacts {
+            width: 245px;
+            margin-left: 30px;
+            .contact-item {
+                margin-bottom: 28px;
+                .company-name {
+                    font-family: Roboto;
+                    font-size: 15px;
+                    line-height: 20px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    color: #323232;
+                }
+                .name {
+                    font-family: Roboto;
+                    font-size: 15px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    color: #323232;
+                }
+                .mail {
+                    font-family: Roboto;
+                    font-size: 15px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    color: #323232;
+                    a {
+                        font-family: Roboto;
+                        font-size: 15px;
+                        font-weight: 300;
+                        line-height: 20px;
+                        text-decoration: underline;
+                        color: #c99c47;
+                    }
+                }
+                .telephone {
+                    font-family: Roboto;
+                    font-size: 15px;
+                    line-height: 20px;
+                    color: #323232;
+                    font-weight: 300;
+                    text-transform: none;
+                    a {
+                        font-family: Roboto;
+                        font-size: 15px;
+                        line-height: 20px;
+                        color: #323232;
+                        font-weight: 300;
+                        text-transform: none;
+                    }
+                }
+            }
+        }
+    }
+}
+.feedback_block {
+    height: 417px;
+    background-color: #e8d8b6;
+    @media (max-width:1170px) {
+        height: 500px;
+    }
+    h2 {
+        text-transform: uppercase;
+        padding-top: 50px;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 24px;
+        line-height: 24px;
+        font-weight: 500;
+        color: #323232;
+    }
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        @media (max-width:1170px) {
+            justify-content: center;
+        }
+
+        .feedback_form {
+            @media (max-width:559px) {
+                text-align: center;
+            }
+            h4 {
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 24px;
+                font-weight: 500;
+                color: #606060;
+                padding-left: 2px;
+                margin-bottom: 1px;
+            }
+            input {
+                width: 555px;
+                height: 115px;
+                border: 1px solid #e8d8b6;
+                padding-left: 20px;
+                padding-right: 20px;
+                @media (max-width:559px) {
+                    width: 310px;
+                }
+            }
+            .under {
+                width: 555px;
+                display: flex;
+                justify-content: space-between;
+                @media (max-width:559px) {
+                    width: 310px;
+                    margin: 0 auto;
+                }
+                input {
+                    width: 270px;
+                    height: 50px;
+                    border: 1px solid #e8d8b6;
+                    @media (max-width:559px) {
+                        width: 145px;
+                    }
+                }
+            }
+
+            button {
+                width: 112px;
+                height: 43px;
+                background-color: #c99c47;
+                color: #fff;
+                font-family: Roboto;
+                font-size: 13px;
+                line-height: 24px;
+                font-weight: 400;
+                margin-top: 15px;
+                margin-left: 443px;
+                @media (max-width:559px) {
+                    margin: 0 auto;
+                    margin-top: 10px;
+                }
+            }
+            button:hover{
+                 transition: 0.4s;
+                 transform: scale(1.2);
+            }
+        }
+        .feedback_info {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding-top: 20px;
+            margin-left: 28px;
+            h3 {
+                font-family: Roboto;
+                font-size: 15px;
+                line-height: 20px;
+                font-weight: 500;
+                color: #323232;
+            }
+            .phone {
+                padding-top: 5px;
+                text-align: start;
+
+                a {
+                    font-family: Roboto;
+                    font-size: 23px;
+                    line-height: 24px;
+                    font-weight: 700;
+                    color: #323232;
+                }
+            }
+            p {
+                padding-top: 5px;
+
+                font-family: Roboto;
+                font-size: 15px;
+                line-height: 20px;
+                font-weight: 400;
+                color: #323232;
+                a {
+                    font-family: Roboto;
+                    font-size: 15px;
+                    line-height: 20px;
+                    font-weight: 400;
+                    text-decoration: underline;
+                    color: #c99c47;
+                }
+                p {
+                    font-family: Roboto;
+                    font-size: 15px;
+                    line-height: 20px;
+                    font-weight: 300;
+                    color: #323232;
+                }
+                @media (max-width:410px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

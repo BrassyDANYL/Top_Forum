@@ -1,0 +1,168 @@
+.container {
+   .text {
+      width: 100%;
+      height: 185px;
+      text-align: center;
+      .subtitle {
+         padding-top: 50px;
+         text-transform: uppercase;
+         font-family: Roboto;
+         font-size: 24px;
+         line-height: 24px;
+         font-weight: 500;
+         color: #323232;
+         @media (max-width:710px) {
+            padding-top: 100px;
+         }
+      }
+      .text_about {
+         padding-top: 20px;
+         font-family: Roboto;
+         font-size: 17px;
+         line-height: 30px;
+         font-weight: 300;
+         color: #323232;
+      }
+   }
+   .selector_block {
+      display: flex;
+      flex-direction: column;
+      .subtitle {
+         margin-top: 40px;
+         text-align: center;
+         text-transform: uppercase;
+         font-family: Roboto;
+         font-size: 17px;
+         line-height: 24px;
+         font-weight: 500;
+         text-transform: uppercase;
+         color: #323232;
+         @media (max-width:940px) {
+            margin-top: 80px;
+         }
+         @media (max-width:710px) {
+            margin-top: 180px;
+         }
+         @media (max-width:510px) {
+            margin-top: 250px;
+         }
+         @media (max-width:410px) {
+            margin-top: 320px;
+         }
+      }
+      .selector {
+         display: flex;
+         justify-content: center;
+         flex-direction: column;
+         margin: 0 auto;
+         margin-top: 20px;
+         li {
+            padding-top: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            width: 450px;
+            height: 50px;
+            border: 1px solid #e8d8b6;
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 300;
+            color: #606060;
+            @media (max-width:510px) {
+               width: 300px;
+            }
+         }
+         .current {
+            display: flex;
+            justify-content: space-between;
+         }
+         .dropbtn3 {
+            width: 25px;
+            height: 10px;
+            background-image: url(../img/icons/arrow_down_gold.png);
+            background-repeat: no-repeat;
+            background-position: center;
+         }
+         ul {
+            display: none;
+         }
+         .show {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+         }
+      }
+   }
+   .sponsors-list {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding-bottom: 65px;
+      @media (max-width:510px) {
+         width: 265px;
+         margin: 0 auto;
+      }
+      .sponsor-item {
+         width: 263px;
+         text-align: center;
+         margin-left: 30px;
+         margin-top: 40px;
+         @media (max-width:710px) {
+            margin-left:0px;
+         }
+         .category {
+            font-family: Roboto;
+            font-size: 19px;
+            line-height: 24px;
+            font-weight: 500;
+            text-transform: uppercase;
+            color: #c99c47;
+            text-align: center;
+         }
+         .logo {
+            width: 263px;
+            height: 160px;
+            border: 1px solid #dfc593;
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+            img {
+               display: inline-block;
+               object-fit: contain;
+            }
+         }
+         .subtitle {
+            padding-top: 20px;
+            text-transform: uppercase;
+            font-family: Roboto;
+            font-size: 17px;
+            line-height: 20px;
+            font-weight: 500;
+            color: #323232;
+         }
+         .about {
+            padding-top: 10px;
+            font-family: Roboto;
+            font-size: 15px;
+            line-height: 20px;
+            font-weight: 300;
+            color: #323232;
+         }
+
+         button {
+            width: 120px;
+            height: 40px;
+            background-color: #d4c198;
+            margin: 0 auto;
+            margin-top: 15px;
+            a {
+               color: #fff;
+            }
+         }
+         button:hover {
+            transition: 0.4s;
+            background-color: #c99c47;
+         }
+      }
+   }
+}

@@ -1,0 +1,42 @@
+@import "null";
+@import "fonts";
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1140px;
+    @media (max-width: 1170px) {
+        width: 920px;
+    }
+    @media (max-width:940px) {
+        width: 700px;
+    }
+    @media (max-width:710px) {
+        width: 500px;
+    }
+    @media (max-width:510px) {
+        width: 400px;
+    }
+    @media (max-width:410px) {
+        width: 300px;
+    }
+}
+
+@import "header";
+@import "banner";
+@import "about";
+@import "sponsors";
+@import "rewiews";
+@import "promovideo";
+@import "clients";
+@import "footer";
+@import "sponsors-page";
+@import "exhibitors-page";
+@import "speakers-page";
+@import "media-page";
+@import "contacts-page";
+@import "registration-page";
+@import "sponsors-and-exhibitors-page";
+@import "events-page";

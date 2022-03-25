@@ -1,0 +1,272 @@
+.registration {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   text-align: center;
+   @media (max-width:710px) {
+      margin-top: 50px;
+   }
+   .subtitle {
+      font-family: Roboto;
+      font-size: 24px;
+      line-height: 24px;
+      font-weight: 500;
+      color: #323232;
+      text-transform: uppercase;
+      padding-top: 50px;
+   }
+   .fill-in-form {
+      margin: 0 auto;
+      margin-top: 40px;
+      width: 415px;
+      height: 58px;
+      border: 2px solid #c99c47;
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 500;
+      color: #c99c47;
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 15px;
+      @media (max-width:410px) {
+         width: 300px;
+      }
+   }
+   img {
+      margin: 0 auto;
+      margin-top: 8px;
+      width: 22px;
+      height: 8px;
+   }
+   .terms {
+      margin: 0 auto;
+      margin-top: 7px;
+      width: 415px;
+      height: 58px;
+      border: 2px solid #c99c47;
+      font-family: Roboto;
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 500;
+      color: #c99c47;
+      text-align: center;
+      text-transform: uppercase;
+      padding-top: 15px;
+      @media (max-width:410px) {
+         width: 300px;
+      }
+   }
+   .choosesomething {
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 44px;
+      display: flex;
+      justify-content: space-around;
+      height: 51px;
+      @media (max-width:710px) {
+         flex-wrap: wrap;
+      }
+
+      input {
+         width: 427px;
+         height: 50px;
+         border: 1px solid #c99c47;
+      }
+
+      h2 {
+         text-align: start;
+         width: 210px;
+         margin-top: 15px;
+         font-family: Roboto;
+         font-size: 14px;
+         line-height: 24px;
+         font-weight: 500;
+         color: #606060;
+         @media (max-width:710px) {
+            text-align: center;
+         }
+      }
+      select {
+         width: 427px;
+         height: 50px;
+         border: 1px solid #e8d8b6;
+         background-image: url(/img/icons/arrow_down_gold.png);
+         background-repeat: no-repeat, repeat;
+         background-color: #fff;
+         appearance: none;
+         background-position: right 0.7em top 50%, 0 0;
+         font-family: Roboto;
+         font-size: 14px;
+         line-height: 24px;
+         font-weight: 300;
+         color: #606060;
+         option {
+            font-family: Roboto;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #606060;
+         }
+      }
+      .radio-con {
+         width: 432px;
+         display: flex;
+         flex-direction: row;
+         text-align: center;
+         label {
+            margin-right: 5px;
+            div {
+               width: 120px;
+               height: 50px !important;
+               background-color: #f2ead8;
+               font-family: Roboto;
+               font-size: 14px;
+               line-height: 16px;
+               font-weight: 500;
+               text-transform: uppercase;
+               color: #323232;
+               padding-top: 15px;
+            }
+         }
+         @media (max-width:710px) {
+            justify-content: center;
+         }
+      }
+      .radio-con2 {
+         width: 432px;
+         display: flex;
+         flex-direction: row;
+         text-align: center;
+         @media (max-width:410px) {
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+         label {
+            margin-right: 4px;
+            @media (max-width:410px) {
+               margin-top: 5px;
+            }
+            div {
+               width: 105px;
+               height: 50px !important;
+               background-color: #f2ead8;
+               font-family: Roboto;
+               font-size: 14px;
+               line-height: 16px;
+               font-weight: 500;
+               text-transform: uppercase;
+               color: #323232;
+               padding-top: 15px;
+            }
+            .visa {
+               background-image: url(/img/icons/visa_mastercard.png);
+               background-position: center;
+               background-repeat: no-repeat;
+            }
+            .paypal {
+               background-image: url(/img/icons/paypal.png);
+               background-position: center;
+               background-repeat: no-repeat;
+            }
+         }
+      }
+      #standard,
+      #premium,
+      #free-payment,
+      #visa-mastercard,
+      #invoice,
+      #paypal {
+         display: none;
+      }
+
+      #premium:checked + label {
+         div {
+            background-color: #c99c47;
+         }
+      }
+      #standard:checked + label {
+         div {
+            background-color: #c99c47;
+         }
+      }
+      #free-payment:checked + label {
+         div {
+            background-color: #c99c47;
+         }
+      }
+      #visa-mastercard:checked + label {
+         div {
+            background-color: #c99c47;
+         }
+      }
+      #invoice:checked + label {
+         div {
+            background-color: #c99c47;
+         }
+      }
+      #paypal:checked + label {
+         div {
+            background-color: #c99c47;
+         }
+      }
+   }
+   .accept {
+      margin-top: 40px;
+      width: 427px;
+      display: flex;
+      margin-left: 585px;
+      @media (max-width:1170px) {
+         margin-left: 425px;
+      }
+      @media (max-width:940px) {
+         margin-left: 260px;
+      }
+      @media (max-width:710px) {
+         margin: 0 auto;
+         margin-top: 50px;
+      }
+      @media (max-width:410px) {
+         margin-top: 140px;
+         width: 100%;
+      }
+      input {
+         margin-top: 5px;
+      }
+      label {
+         font-family: Roboto;
+         font-size: 14px;
+         line-height: 24px;
+         font-weight: 300;
+         color: #606060;
+         margin-left: 8px;
+         white-space: nowrap;
+         a {
+            font-family: Roboto;
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 300;
+            color: #606060;
+            text-decoration: underline;
+         }
+      }
+         button {
+            width: 112px;
+            height: 42px;
+            background-color: #c99c47;
+            font-family: Roboto;
+            font-size: 13px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #ffffff;
+            text-transform: uppercase;
+            margin-left: 128px;
+            margin-top: -5px;
+            margin-bottom: 20px;
+            @media (max-width:410px) {
+               margin-left: 20px;
+            }
+         }
+      
+   }
+}
